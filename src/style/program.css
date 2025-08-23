@@ -1,0 +1,129 @@
+* {
+  padding: 0;
+  margin: 0;
+  background-color: #e6d9f5;
+}
+
+.programmes {
+  text-align: center;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: 500;
+  font-family: 'Georgia', serif;
+  color: black;
+  margin-bottom: 0.5rem;
+}
+
+.leaf-divider-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.line {
+  width: 100px;
+  height: 2px;
+  background-color: #4b0082;
+}
+
+.leaf-icon {
+  width: 30px;
+  height: 30px;
+  fill: #4b0082;
+}
+
+.program-boxes {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  padding: 30px;
+}
+
+.program-card {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 200px;
+  padding: 1rem;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.program-card:hover {
+  transform: translateY(-5px);
+}
+
+.program-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+}
+
+.program-card h3 {
+  font-size: 20px;
+  margin-bottom: 0.5rem;
+  font-family: 'Georgia', serif;
+  background-color: white; 
+}
+
+.program-card p {
+  font-size: 14px;
+  color: black;
+  margin: 8px 0;
+  line-height: 1.4;
+  background-color: white;  
+  padding: 6px;
+  border-radius: 6px;
+}
+
+ .read-more { 
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  margin: 8px 0;
+  display: inline-block;
+  background-color: white;  
+}
+
+.based {
+  color: black;
+  font-size: 12px;
+  background-color: white; 
+  padding: 4px;
+  border-radius: 4px;
+}
+#user {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0.5rem auto;
+  display: block;
+}
+
+
+@media (max-width: 768px) {
+  .program-boxes {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .program-card {
+    width: 90%;
+    max-width: 350px;
+  }
+
+  .program-card img {
+    height: 200px;
+  }
+}

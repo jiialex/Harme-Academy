@@ -56,7 +56,7 @@ height: auto;
 .chill {
   display: flex;
   align-items: center;
-  gap: 2rem;
+  gap: 1rem;
   flex-wrap: wrap; 
 }
 .par {
